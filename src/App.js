@@ -1,4 +1,4 @@
-import React, { Component }from 'react';
+import React, { Component } from 'react';
 import Contact from './components/Contact'; 
 import Header from './components/Header'; 
 
@@ -9,10 +9,18 @@ class App extends Component {
 
     return(
     <div className="App">
-      <h1>The App Component</h1>
-      <Header/>
-      <Contact/>
-      
+      <Header branding="Contact Manager"/>
+      <Contact 
+        name="Chris Chin" 
+        email="chris@email.com" 
+        phone="555-555-5555"
+      />
+
+      <Contact 
+        name="Andrew Chin" 
+        email="andrew@email.com" 
+        phone="555-555-5555"
+      />
     </div>
     );
   }
